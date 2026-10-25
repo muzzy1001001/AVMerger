@@ -1,0 +1,13 @@
+import { Router } from "express";
+import * as api from "../controllers/api.js";
+export const router = Router();
+router.get("/health", api.health);
+router.post("/upload", api.upload);
+router.post("/merge", api.start);
+router.use("/jobs/:id", api.findJob);
+router.get("/jobs/:id", api.status);
+router.get("/jobs/:id/events", api.events);
+router.post("/jobs/:id/cancel", api.stop);
+router.get("/jobs/:id/download", api.sendOutput);
+router.get("/jobs/:id/preview", api.sendOutput);
+router.delete("/jobs/:id", api.remove);

@@ -1,0 +1,16 @@
+{
+  "name": "av-merger-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/win32-x64": "^4.1.0",
+    "@ffprobe-installer/win32-x64": "^5.1.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}

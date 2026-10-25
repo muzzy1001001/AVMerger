@@ -1,0 +1,15 @@
+node_modules/
+frontend/dist/
+.tools/
+.env
+backend/uploads/*
+backend/outputs/*
+!**/.gitkeep
+
+test-results/
+playwright-report/
+.qa/
+
+.env.*
+!.env.example
+*.log
